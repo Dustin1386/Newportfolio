@@ -1,305 +1,246 @@
-/*code that controls the color font size and font family for the body of the entire page*/
-body{
-background-color: rgb(211,211,211);
-font-family: 'Arvo', serif;
-text-align: center;
-font-size: 20px;
-/* width: 100%; */
-}
-/*code that dictates position color and font family of the un-ordered list*/
-ul{
-color: black;
-display: block;
-margin: auto;
-list-style-position: inside;
-font-family: 'Arvo', serif;
-}
-/*code that dictates position color and font family of the un-ordered list*/
-ol{
-color: black;
-display: block;
-margin: auto;
-width: 25%;
-list-style-position: inside;
-text-align: center0;
-}
-/*code that aligns the list items to the left */
 
-/*code that dictates how long the horizontal lines are*/
-hr{
-	width: 50%;
+#page-wrap{
+    overflow: hidden;
+    width:100%;
 }
+body{background-color: rgb(211,211,211);
+    font-family: 'Arvo', serif;
+    
+   
+    
+    
+    }
+    .welcome{
+      text-align: center;
+      list-style-type: none;
+    }
+header{
+    background-color:#0B1C51;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
 
 }
-/*code that dictates how the footer information behaves*/
-footer{
-text-align: center;
-font-family: 'Arvo', serif;
-
-}
-
-#contact{
+#portfolio{
   text-align: center;
 }
-/*Code to control how the image is displayed*/
-.img{
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: 50%;
+header h1{
+ flex-wrap: wrap; 
+ color: white;
+ text-align: center;
+
 }
+.foot{
+  text-align: center;
+  background-color: indianred;
+}
+header nav ul{
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+}
+
+.grid2x2 {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .grid2x2 > div {
+    display: flex; 
+    flex-basis: calc(50% - 40px);  
+    justify-content: center;
+    flex-direction: column;
+  }
+  .grid2x2 > div > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .box p{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .box { margin: 20px; }
+  .box1 { background-color: gray;box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);text-align: center; }
+  .box2 { background-color:grey;box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);text-align: center; }
+  .box3 { background-color:grey;box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);text-align: center;}
+  .box4 { background-color: grey;box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);text-align: center; }
 /*dicates how the about section is displayed*/
 .about{
-color: black;
-display: flex;
-flex-direction: column;
-flex:1;
-margin: auto;
-width: 25%;
-font-family: 'Arvo', serif;
-
-}
-/*centers the text in the text in the footer*/
-.foot{
-	text-align: center;
-	height: auto;
-	padding: auto;
-}
-/*Aligns my paragraphs to the left*/
-p{
-text-align: left;
-}
-<style>
-/* unvisited link */
-a:link {
-  color: red;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    flex:2;
+    margin: auto;
+    font-family: 'Arvo', serif;
+    text-align: center;
 }
 
-/* visited link */
-a:visited {
-  color: green;
+.map{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    }
+.row{
+    text-align: center;
 }
-
-/* mouse over link */
-a:hover {
-  color: hotpink;
-}
-
-/* selected link */
-a:active {
-  color: blue;
-}
-
-
-}
-.project{
-  display: flex;
-  justify-content: space-between;
-  
- 
-  
-}
-.grid2x2 {
-  min-height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-.grid2x2 > div {
-  display: flex; 
-  flex-basis: calc(50% - 40px);  
-  justify-content: center;
-  flex-direction: column;
-}
-.grid2x2 > div > div {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.box p{
-  text-align: center;
-  margin-bottom: 20px;
-}
-.box { margin: 20px; }
-.box1 { background-color: gray;box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); }
-.box2 { background-color:grey;box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); }
-.box3 { background-color:grey;box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); }
-.box4 { background-color: grey;box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); }
-
-
-
-header {
-  background-color:#0B1C51;
-  margin-bottom: 40px;
-
-}
-
-header h1 {
-  color: #fff;
-  text-align: center;
-  margin: 0;
-  padding-top: 20px;
-  font-family: 'Gochi Hand', cursive;
-  font-size: 52px;
-}
-
-header nav {
-  display: flex;
-  justify-content: center;
-}
-
-header nav ul {
-  display: flex;
-  padding-left: 0;
-  list-style: none;
-}
-
-header nav ul li a{
-  color: #fff;
-  text-decoration: none;
-  margin: 0 20px 0 0;
-  font-size: 52px;
-  font-family: 'Montserrat', sans-serif;
-
-
-}
-
-header nav ul li: :last-child a {
-  margin-right:0;
-}
-
-@media all and (min-width: 600px){
-  header {
-  background-color:#0B1C51;
-  margin-bottom: 40px;
-  display: flex;
-
-}
-
-header h1 {
-  color: #fff;
-  text-align: center;
-  margin-left: 6%;
-  padding-top: 20px;
-  font-family: 'Gochi Hand', cursive;
-  font-size: 52px;
-}
-
-header nav {
-  display: inline-flex;
+img{
+  display: block;
   margin-left: auto;
-}
-
-header nav ul {
-  display: inline-flex;
-  padding-left: 0;
-  list-style: none;
-}
-
-header nav ul li a{
-  color: #fff;
-  text-decoration: none;
-  font-size: 30px;
-  font-family: 'Montserrat', sans-serif;
-}
-* {
-  box-sizing: border-box;
-}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-
-}
-
-form input[type=email]{
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: grabbing;
-  float: right;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+  margin-right: auto;
+  border-radius: 50%;
+  max-width: 50%;
   text-align: center;
-  margin: 0 25% 0 25%;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
+    
 
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
 
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
+/* how content should be displayed on screens larger than 600px */
+@media all and (min-width: 600px) {
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 30px;
+    }
+    .map{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+  
+    header h1 {
+      margin: 14px 0;
+      padding-top: 0 20px;
+      font-size: larger;
+    }
+    
+    header nav ul {
+      margin-top: 25px;
+      display:inline-block;
+      justify-content: space-around;
+      display: inline-flex;
 
-/* Clear floats */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.grid2x2 {
-  min-height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-.grid2x2 > div {
-  display: flex; 
-  flex-basis: calc(50% - 40px);  
-  justify-content: center;
-  flex-direction: column;
-}
-.grid2x2 > div > div {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.box p{
-  text-align: center;
-  margin-bottom: 20px;
-
-/* Responsive layout - less than 600px wide, makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
+    }
+  
+    header nav ul li a:hover {
+      color: #bdbdbd;
+    }
+    header nav ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0 10px;
+        
+      }
+  
+   
+   
+  input[type=text], select, textarea {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  
+  }
+  
+  form input[type=email]{
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  
+  label {
+    padding: 12px 0px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: grabbing;
+    float: right;
+    margin-top: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    margin: 2% 25% 0 25%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .grid2x2 {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  /* Clear floats */
+  .grid2x2 {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .grid2x2 > div {
+    display: flex; 
+    flex-basis: calc(50% - 40px);  
+    justify-content: center;
+    flex-direction: column;
+  }
+  .grid2x2 > div > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .box p{
+    text-align: center;
+    margin-bottom: 12px;
   }
 }
+  
+  /* Responsive layout - less than 600px wide, makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  
